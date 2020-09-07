@@ -6,12 +6,13 @@
     
     <style>
       body {
-        color: #BEBDB8;
+
         font-family: 'Lato', sans-serif;
-        font-size: 50px;
+        font-size: 40px;
+	overflow: hidden;
       }
       .blink1 {
-        animation: blinker 7s linear infinite;
+        animation: blinker 8s linear infinite;
       }
       @keyframes blinker {
         50% {
@@ -19,7 +20,7 @@
         }
 }
       .blink2 {
-        animation: blinker 8s linear infinite;
+        animation: blinker 10s linear infinite;
       }
       @keyframes blinker {
         50% {
@@ -30,6 +31,7 @@
   </head>
   <body>
     <div class="blink blink1"> &nbsp sometime </div>
-    <div class="blink blink2"> &nbsp somewhere </div>
+    <div style="position:absolute; bottom:20px;"
+	class="blink blink2"> &nbsp somewhere </div>
   </body>
 </html>
