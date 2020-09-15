@@ -1,37 +1,117 @@
 <!DOCTYPE html>
 <html>
   <head>
-
- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+      <TITLE>hi from mijia</TITLE>
+	<meta name="viewport" content="width=device-width, initial-scale=1",
+	<meta name="description" content="mijia wang">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     
+
+
     <style>
       body {
-
+	background: black;
         font-family: 'Lato', sans-serif;
-        font-size: 40px;
+        font-size: 5vh;
 	overflow: hidden;
+	color: #F4F4E8;
       }
-      .blink1 {
-        animation: blinker 8s linear infinite;
+
+
+      .sometime {
+        animation: blinker 12s linear infinite;
       }
       @keyframes blinker {
-        50% {
-          opacity: 0;
+        0% {
+          opacity: 0.1;
         }
 }
-      .blink2 {
+      .somewhere {
         animation: blinker 10s linear infinite;
       }
       @keyframes blinker {
         50% {
-          opacity: 0;
+          opacity: 0.1;
         }
 }
+
+
+
+.photo {
+  display: none;
+}
+    
+.sometime:hover + .photo {
+  display: block;
+}
+.somewhere:hover + .photo {
+  display: block;
+}
+
+.sometime:hover {  text-shadow: 1px 1px 7px #CCCCCC;
+	cursor: default; 
+		 }
+.somewhere:hover {  text-shadow: 1px 1px 7px #D8D8D8;
+	cursor: default; 
+		}
+
+
+
+#myVideo {
+  position: absolute;
+  right: -20vw;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -2;
+}
+
+
+
+
+.layer {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  z-index: -1;
+}
+
+
+
     </style>
   </head>
+
+
+
   <body>
-    <div class="blink blink1"> &nbsp sometime </div>
-    <div style="position:absolute; bottom:20px;"
-	class="blink blink2"> &nbsp somewhere </div>
+
+<video autoplay muted loop id="myVideo">
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+
+
+    <div style="position:absolute; top:10px; left: 25px;"
+	 class="sometime">  sometime </div>
+      <div class="photo"><img src=" ">  </div>
+
+
+
+    <div style="position:absolute; bottom:20px; left:25px;"
+	   class="somewhere">  somewhere 
+</div>
+      <div class="photo"><img src="  ">  </div>
+
+
+<div class="background">
+    <div class="layer">
+    </div>
+</div>
+
+
   </body>
 </html>
+
