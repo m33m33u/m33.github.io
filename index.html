@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <TITLE>hi from mijia</TITLE>
+<head>
+<meta charset="utf-8"/>
+<title>hi from mijia</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="mijia wang">
- 	<meta charset="utf-8" />
+        <meta name="keywords" content="mijia, mijia wang">
+        <meta name="description" content="mijia wang">
+        <meta name="author" content="mijia wang">
+        <meta name="publisher" content="mijia wang">
 
 <meta name="application-name" content="&nbsp;"/>
 <meta name="msapplication-TileColor" content="#FFFFFF" />
@@ -17,11 +20,11 @@
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 
-    
 
 
     <style>
-	        
+
+    
 @font-face {
     font-family: 'LatoWebHairline';
     src: url('fonts/Lato-Hairline.eot');
@@ -33,8 +36,10 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
-	    
-	    
+
+
+
+
       body {
 	background: black;
         font-family: "LatoWebHairline";
@@ -69,10 +74,35 @@
     
 .sometime:hover + .photo {
   display: block;
+	position: absolute;
+  right: 0;
+  bottom: 0;
 }
+.sometime:active + .photo {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
 .somewhere:hover + .photo {
   display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
+, .sometime:active + .photo {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+
 
 .sometime:hover {  text-shadow: 1px 1px 7px #CCCCCC;
 	cursor: default; 
@@ -100,9 +130,9 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
-  z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 
@@ -112,25 +142,29 @@
 
 
 
+
+
+
+
+
   <body>
 
 <video autoplay muted loop id="myVideo">
   <source src="video.mp4" type="video/mp4">
 <source src="video.webm" type="video/webm">
-</video>
 
+</video>
 
 
     <div style="position:absolute; top:10px; left: 25px;"
 	 class="sometime">  sometime </div>
-      <div class="photo"><img src=" ">  </div>
-
+      <div class="photo"><img src="conv.png">  </div>
 
 
     <div style="position:absolute; bottom:20px; left:25px;"
 	   class="somewhere">  somewhere 
 </div>
-      <div class="photo"><img src="  ">  </div>
+      <div class="photo"><img src="qiu.png">  </div>
 
 
 <div class="background">
