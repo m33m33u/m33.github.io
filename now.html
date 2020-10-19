@@ -1,216 +1,142 @@
-    @font-face {
-    font-family: 'LatoWebHairline';
-    src: url('fonts/Lato-Hairline.eot');
-    src: url('fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'), 
-         url('fonts/Lato-Hairline.woff2') format('woff2'),
-         url('fonts/Lato-Hairline.woff') format('woff'),
-         url('fonts/Lato-Hairline.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+<title>coming to terms with...</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="mijia wang | a container">
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
 
 
-body {
-  margin: 0;
-  padding: 0;
-background-color: #AAA9A8;
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-            font-family: "LatoWebHairline";
-        font-size: 5vh;
-      }
+  <link rel="stylesheet" href="./now.css">
 
-
-.clock {
-  position: fixed;
-  left: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.clock .hour, .clock .min, .clock .sec {
-  position: absolute;
-  background-color: dimgray;
-  transform-origin: 0% 100%;
-  border-radius: 4px;
-box-shadow: .5px .5px 3px slategray;
-}
-
-.clock .hour.animate, .clock .min.animate, .clock .sec.animate {
-  transition: all 0.2s ease-in-out;
-}
-.clock .hour {
-  width: 1px;
-  height: 600px;
-  top: 0;
-
-}
-.clock .min {
-  width: 1px;
-  height: 600px;
-  top: 0;
-}
-.clock .sec {
-  width: 1px;
-  height: 600px;
-  top: 0;
-}
-
-
-#myclock.clock {
-  top: -40%;
-}
-
-
-
-
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 120vw;
-  min-height: 120vh;
-  z-index: -3;
-filter:opacity(90%) invert(56%) saturate(300%) brightness(120%);
-}
-
-
-.scrolltxt {
-overflow: scroll;
-      position: absolute;
-padding-top: 30px;
-    padding-right: 30px;
-    
-  width: 52vw;
-  max-height: 20vh;
-    
-      z-index: -2;
-}
-
-.scrolltxt::-webkit-scrollbar {
-    display: none;}
-
-    
-    #scrolltp {
-        right: 5px;
-    top: 5px;
-    }
-    
-  #scrollbtm {
-        right: 5px;
-    bottom: 5px;
-    }
-    
-
-<!---
-#night {
-  display: block;
-  position: absolute;
-  right: 220px;
-  bottom: 320px;
-filter: opacity(0.7) blur(3px);
-  z-index: -2;
-}
-
-#ringbook {
-  display: block;
-  position: absolute;
-  top: 160px;
-  left: 920px;
-filter: opacity(0.8) blur(.1px);
-
-  z-index: -2;
-}
-
-#laser {
-  display: block;
-  position: absolute;
-  right: 860px;
-  bottom: 180px;
-filter: opacity(0.5) blur(2.5px);
-  z-index: -2;
-}
-
---->
-
-.layer {
-    background-color: rgba(216, 216, 216, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    overflow: hidden;
-
-}
-
-
-<!---
-
-.menu:hover {  text-shadow: 1px 1px 5px #CCCCCC;
-	cursor: default; 
-		 }
-
-
-    
-        a {
-        font-family: "LatoWebHairline";
-        font-size: 5vh;
-            color: #F4F4E8;
-  text-shadow: 1px 1px 5px #808080;
-        }
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="myclock" class="clock" >
+      <div id="mysec" class="sec animate"></div> 
+      <div id="mymin" class="min animate"></div> 
+      <div id="myhour" class="hour animate"></div>  
+</div>
+                               
+<div id="yourclock" class="clock" >
+      <div id="yoursec" class="sec animate"></div>
+      <div id="yourmin" class="min animate"></div>
+      <div id="yourhour" class="hour animate"></div>
+    </div>
         
-        a:link {
-  text-decoration: none;
-}
+<!-- partial -->
+  <script  src="./now.js"></script>
 
-        a:visited {
-  text-decoration: none;
-}
+    
+    
+    
 
-a:hover {
-  text-decoration: none;
-}
+<video autoplay muted loop id="myVideo">
+  <source src="video.mp4" type="video/mp4">
+<source src="video.webm" type="video/webm">
 
-a:active {
-  text-decoration: none;
-}
+</video>
+    
+    
+    <div class="background">
+    <div class="layer">
+
+       
+    </div>
+</div>
+    
+    
+ <!---
+    <a id="sometime" class="menu" href="index.html">  sometime </a>
+    <a id="somewhere" class="menu" href="here.html">  somewhere </a>
+    
+    
+   
+    <img class=photo id="night" src="03E2BD31.jpeg" width="200" >
+    <img class=photo id="ringbook" src="17444789.jpg" width="180" >
+    <img class=photo id="laser" src="07523858.jpeg" width="140" >
+    
+    --->
+    
+    
+    <div class="scrolltxt" id="scrolltp">
+    <p>
+<br><br> <br>
+“when i grow up i want to become a scale”
+<br><br> <br>
+        
+<br> <br> <br>
+<br> <br> <br><br> <br> <br><br> <br> <br>
+        
+        if i spin too fast will it ever make the earth dizzy?
+        <br><br> <br>
         
 
+<br> <br> <br>
+        
+        
+<br>may i,<br>
+        again,
+        <br>introduce to you..
 
 
-      #sometime {
-        animation: blinker 11s linear infinite;
-position:absolute; 
-top:10px; 
-left: 25px;
-  z-index: 2;
-      }
+    </p>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+        <div class="scrolltxt" id="scrollbtm">
+     
+    <p>
 
-      @keyframes blinker {
-        0% {
-          opacity: 0.1;
-        }
-
-}
-
-      #somewhere {
-        animation: blinker 10s linear infinite;
-position:absolute; 
-bottom:20px; 
-left:25px;
-  z-index: 2;
-      }
-
-      @keyframes blinker {
-        50% {
-          opacity: 0.1;
-        }
-}
---->
+<br> <br> <br>
+        <br> <br> <br><br> <br> <br>
+        it is <br>
+(not) <br> as a land surveyor i wish to emerge
+<br> <br> <br>
 
 
+<br>
 
+<br> <br><br><br> <br> <br><br> <br> <br><br> <br> <br>
+a voluntary demi-fool & <br>
+a hunter-gatherer type of weavor<br>
+in a porous relationship with the world
+    </p>
+    </div>
+    
+    
+    
+
+    
+    
+        <script>
+    
+var s1 = document.getElementById('scrolltp');
+var s2 = document.getElementById('scrollbtm');
+
+function select_scroll_1(e) { s2.scrollTop = s1.scrollTop; }
+function select_scroll_2(e) { s1.scrollTop = s2.scrollTop; }
+
+s1.addEventListener('scroll', select_scroll_1, false);
+s2.addEventListener('scroll', select_scroll_2, false);
+
+
+
+    </script>
+    
+</body>
+</html>
