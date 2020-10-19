@@ -20,6 +20,9 @@
 
     <style>
 
+
+
+
     
 @font-face {
     font-family: 'LatoWebHairline';
@@ -30,41 +33,63 @@
          url('fonts/Lato-Hairline.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
-    text-rendering: optimizeLegibility;
 }
 
 
 
 
       body {
-	background: black;
+	background-color: dimgray;
         font-family: "LatoWebHairline";
         font-size: 5vh;
 	overflow: hidden;
-	color: #F4F4E8;
-	text-shadow: 1px 1px 3px #37372c;
       }
 
+        
+        a {
+            color: #F4F4E8;
+  text-shadow: 1px 1px 5px #808080;
+        }
+        
+        a:link {
+  text-decoration: none;
+}
 
-      .sometime {
-        animation: blinker 12s linear infinite;
-	position:absolute; 
-	top:10px; 
-	left: 25px;
-	z-index: 2;
+        a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+        
+
+      #sometime {
+        animation: blinker 11s linear infinite;
+position:absolute; 
+top:10px; 
+left: 25px;
+  z-index: 2;
       }
+
       @keyframes blinker {
         0% {
           opacity: 0.1;
         }
+
 }
-      .somewhere {
+      #somewhere {
         animation: blinker 10s linear infinite;
-	position:absolute; 
-	bottom:20px; 
-	left:25px;
-	z-index: 2;
+position:absolute; 
+bottom:20px; 
+left:25px;
+  z-index: 2;
       }
+
       @keyframes blinker {
         50% {
           opacity: 0.1;
@@ -77,7 +102,7 @@
   display: none;
 }
     
-.sometime:hover + .photo {
+#sometime:hover + #conv {
   display: block;
   position: absolute;
   right: 20px;
@@ -85,22 +110,22 @@
 filter: opacity(.5) blur(.1px) drop-shadow(0 0 0.25rem #CCCCCC);
 }
 
-.somewhere:hover + .photo {
+        
+#somewhere:hover + #qiu {
   display: block;
   position: absolute;
   right: 0;
   bottom: 0;
-filter: blur(1px) drop-shadow(0 0 0.1rem #464E51);
+filter: opacity(.7) blur(.1px) drop-shadow(0 0 0.3rem #F5F5DC);
 }
 
 
 
-.sometime:hover {  text-shadow: 1px 1px 7px #CCCCCC;
+
+
+.menu:hover {  text-shadow: 1px 1px 5px #CCCCCC;
 	cursor: default; 
 		 }
-.somewhere:hover {  text-shadow: 1px 1px 7px #D8D8D8;
-	cursor: default; 
-		}
 
 
 
@@ -111,34 +136,64 @@ filter: blur(1px) drop-shadow(0 0 0.1rem #464E51);
   min-width: 120vw;
   min-height: 120vh;
   z-index: -3;
+  filter:opacity(20%) saturate(150%) brightness(130%);
 }
 
 
 
 
+
 .layer {
-    background-color: rgba(0, 0, 0, 0.1);
+
+    background-color: rgba(105, 105, 105, 0.1);
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    overflow: auto;
+}
+        
+
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2d2f; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a9a9a9; 
 }
 
 
 
-    </style>
-  </head>
 
 
 
+
+</style>
+
+</head>
 
 
 
 
 
   <body>
+
+
 
 <video autoplay muted loop id="myVideo">
   <source src="video.mp4" type="video/mp4">
@@ -147,18 +202,24 @@ filter: blur(1px) drop-shadow(0 0 0.1rem #464E51);
 </video>
 
 
-    <div class="sometime">  sometime </div>
-      <div class="photo"><img src="conv.png">  </div>
 
 
-    <div class="somewhere">  somewhere </div>
-      <div class="photo"><img src="qiu.png">  </div>
+  <!---  <a id="sometime" class="menu" href="now.html">  sometime </a> --->
+      <div id="conv" class="photo"><img src="conv.png">  </div>
+
+
+
+  <!---  <a id="somewhere" class="menu" href="here.html">  somewhere </a>  --->
+      <div id="qiu" class="photo"><img src="qiu.png">  </div>
 
 
 <div class="background">
     <div class="layer">
     </div>
 </div>
+
+
+
 
 
   </body>
