@@ -85,12 +85,10 @@ padding-top: 30px;
     
   width: 52vw;
   max-height: 20vh;
-    
-      z-index: -2;
+
 }
 
-.scrolltxt::-webkit-scrollbar {
-    display: none;}
+
 
     
     #scrolltp {
