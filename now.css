@@ -13,10 +13,10 @@
 body {
   margin: 0;
   padding: 0;
-background-color: lightgray;
-  overflow: hidden;
-    
+background-color: #AAA9A8;
 
+            font-family: "LatoWebHairline";
+        font-size: 5vh;
       }
 
 
@@ -67,14 +67,42 @@ box-shadow: .5px .5px 3px slategray;
 
 
 #myVideo {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   min-width: 120vw;
   min-height: 120vh;
   z-index: -3;
-filter:opacity(80%) invert(54%) saturate(300%) brightness(120%);
+filter:opacity(90%) invert(56%) saturate(300%) brightness(120%);
 }
+
+
+.scrolltxt {
+overflow: scroll;
+      position: absolute;
+padding-top: 30px;
+    padding-right: 30px;
+    
+  width: 52vw;
+  max-height: 20vh;
+    
+      z-index: -2;
+}
+
+.scrolltxt::-webkit-scrollbar {
+    display: none;}
+
+    
+    #scrolltp {
+        right: 5px;
+    top: 5px;
+    }
+    
+  #scrollbtm {
+        right: 5px;
+    bottom: 5px;
+    }
+    
 
 
 #night {
@@ -109,13 +137,13 @@ filter: opacity(0.5) blur(2.5px);
 
 .layer {
     background-color: rgba(216, 216, 216, 0.1);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     z-index: -1;
-    overflow: auto;
+    overflow: hidden;
 
 }
 
@@ -181,3 +209,7 @@ left:25px;
           opacity: 0.1;
         }
 }
+
+
+
+
