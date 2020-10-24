@@ -15,8 +15,10 @@ body {
   padding: 0;
 background-color: #AAA9A8;
 
-            font-family: "LatoWebHairline";
+          font-family: "LatoWebHairline";
         font-size: 5vh;
+	    color: dimgray;
+
       }
 
 
