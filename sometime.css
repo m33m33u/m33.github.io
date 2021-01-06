@@ -1,0 +1,54 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+background-color: #AAA9A8;
+      }
+
+
+.clock {
+  position: fixed;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+z-index=0;
+}
+
+
+.clock .hour, .clock .min, .clock .sec {
+  position: absolute;
+  background-color: lightgray;
+  transform-origin: 0% 100%;
+  border-radius: 4px;
+
+}
+
+.clock .hour.animate, .clock .min.animate, .clock .sec.animate {
+  transition: all 0.2s ease-in-out;
+}
+.clock .hour {
+  width: 0.5px;
+  height: 700px;
+  top: 0;
+
+}
+.clock .min {
+  width: 0.5px;
+  height: 700px;
+  top: 0;
+}
+.clock .sec {
+  width: 0.5px;
+  height: 700px;
+  top: 0;
+}
+
+
+#myclock.clock {
+  top: -30%;
+}
+
+
+iframe { position: absolute; float: left; clear: both; left no-repeat; z-index: -99;}
