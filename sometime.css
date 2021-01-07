@@ -30,18 +30,18 @@ z-index=0;
 }
 .clock .hour {
   width: 0.5px;
-  height: 700px;
+  height: 600px;
   top: 0;
 
 }
 .clock .min {
   width: 0.5px;
-  height: 700px;
+  height: 600px;
   top: 0;
 }
 .clock .sec {
   width: 0.5px;
-  height: 700px;
+  height: 600px;
   top: 0;
 }
 
