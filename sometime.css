@@ -51,4 +51,4 @@ z-index=0;
 }
 
 
-iframe { position: absolute; float: left; clear: both; left no-repeat; z-index: -99;      opacity: 0.4; }
+iframe { position: absolute; float: left; clear: both; left no-repeat; z-index: -99; opacity: 0.8; filter: blur(0.8px);}
