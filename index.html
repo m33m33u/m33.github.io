@@ -15,22 +15,10 @@
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 <style>
-@font-face {
-    font-family: 'LatoWebHairline';
-    src: url('fonts/Lato-Hairline.eot');
-    src: url('fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'), 
-         url('fonts/Lato-Hairline.woff2') format('woff2'),
-         url('fonts/Lato-Hairline.woff') format('woff'),
-         url('fonts/Lato-Hairline.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-
 
 
       body {
 	background-color: #ebeded;
-        font-family: "LatoWebHairline";
         font-size: 30pt;
 	overflow: hidden;
       }
@@ -58,41 +46,12 @@ a:active {
 }
         
 
-      #sometime {
-        animation: blinker 11s linear infinite;
-position:absolute; 
-top:10px; 
-left: 25px;
-  z-index: 2;
-      }
-
-      @keyframes blinker {
-        0% {
-          opacity: 0.1;
-        }
-
-}
-      #somewhere {
-        animation: blinker 10s linear infinite;
-position:absolute; 
-bottom:20px; 
-left:25px;
-  z-index: 2;
-      }
-
-      @keyframes blinker {
-        50% {
-          opacity: 0.1;
-        }
-}
 
 
 
-.photo {
-  display: none;
-}
+
     
-#sometime:hover + #conv {
+ #conv {
   display: block;
   position: absolute;
   right: 20px;
@@ -101,23 +60,6 @@ filter: opacity(.5) blur(1px) drop-shadow(0 0 0.25rem #CCCCCC);
 }
 
         
-#somewhere:hover + #qiu {
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-filter: opacity(.5) blur(.7px) drop-shadow(0 0 1rem #F5F5DC);
-}
-
-
-
-
-
-.menu:hover {  text-shadow: 1px 1px 5px #CCCCCC;
-	cursor: default; 
-		 }
-
-
 
 
 
@@ -161,13 +103,9 @@ filter: opacity(.5) blur(.7px) drop-shadow(0 0 1rem #F5F5DC);
 
 
 
-    <a id="sometime" class="menu" href="sometime.html">  sometime </a>
-      <div id="conv" class="photo"><img src="conv.png">  </div>
+ <div id="conv" class="photo"><img src="conv.png">  </div>
 
 
-
-    <a id="somewhere" class="menu" href="somewhere.html">  somewhere </a>
-      <div id="qiu" class="photo"><img src="qiu.png">  </div>
 
 
 <div class="background">
